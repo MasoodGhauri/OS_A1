@@ -1,0 +1,37 @@
+# Simple CPU Simulator
+
+This is a simple CPU simulator implemented in C++. It simulates a simple computer system with a CPU, RAM, and a set of instructions to perform various operations.
+
+## Program Description
+
+The program consists of three main classes:
+
+1. `Instruction`: Represents an instruction with an opcode and an operand. The supported opcodes are ADD, SUB, MULT, DIVD, LOAD, STORE, HALT, and VAL.
+
+2. `RAM`: Represents the memory of the simulated computer. It provides methods to load the array of instructions into memory, set values at specific memory addresses, and retrieve values from memory.
+
+3. `CPU`: Represents the central processing unit of the computer. It fetches instructions from memory, decodes them, and executes the corresponding operations. It also has registers for program counter (PC), accumulator (AC), and instruction register (IR).
+
+4. This program shows the fetch-decode-execute instruction lifecycle of usual CPU
+
+## How the Program Works
+
+1. The program defines a set of instructions using arrays in the `main` function for calculating both BMI (Body Mass Index) and Percentage.
+
+2. Instructions for `BMI calculation` are loaded into memory, and the CPU is initialized. The program then enters a loop, executing instructions until a HALT instruction is encountered. The result is stored in memory address 255 (last address).
+
+3. Instructions for `Percentage calculation` are loaded into memory, and the CPU is reset with program counter value = 0 . Again, the program enters a loop, executing instructions until a HALT instruction is encountered. The result (percentage) is stored in memory address 255.
+
+4. It outputs the state of the RAM, PC, AC, Instruction, IR before and after every cpu cycle
+
+5. Only one program can run at a time other should be commented out
+
+## Running the Program
+
+To run the program, compile it using a C++ compiler (e.g., g++) and execute the resulting binary. The program will execute the BMI and percentage calculation programs in a loop. `Only one program can run at a time other should be commented out`
+
+## Additional Notes
+
+- The BMI calculation program calculates the BMI based on weight and height and stores the final result in memory address 255.
+
+- The percentage calculation program calculates the percentage based on obtained marks and total marks and stores the final result in memory address 255.
