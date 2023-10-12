@@ -26,6 +26,8 @@ The program consists of three main classes:
 
 5. Only one program can run at a time other should be commented out
 
+6. Addition, Subtract, Multiply, and Divide multiplication operation can be performed, LOAD, STORE, and HALT stands for utility functions, and VAL act as variables.
+
 ## Running the Program
 
 To run the program, compile it using a C++ compiler (e.g., g++) and execute the resulting binary. The program will execute the BMI and percentage calculation programs in a loop. `Only one program can run at a time other should be commented out`
